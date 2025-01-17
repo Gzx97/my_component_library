@@ -11,12 +11,28 @@ class CustomButtonPage extends StatelessWidget {
         title: const Text('Custom Button Example'),
       ),
       body: Center(
-        child: CustomButton(
-          onPressed: () {
-            print('Custom Button Pressed');
-          },
-          label: 'Click Me',
-          color: Colors.blue,
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.start,
+          children: [
+            // 普通使用，使用默认颜色
+            CustomButton(
+              onPressed: () {
+                print('Custom Button Pressed with default type');
+              },
+              label: 'Default Color Button',
+              loading: true,
+              loadingText: 'loading...',
+            ),
+            const SizedBox(height: 20),
+            // 指定颜色的按钮
+            CustomButton(
+              onPressed: () {
+                print('Custom Button Pressed with red type');
+              },
+              label: 'Red Color Button',
+              type: "danger",
+            ),
+          ],
         ),
       ),
     );

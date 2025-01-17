@@ -9,8 +9,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Component Library Example',
-      initialRoute: '/',
+      title: 'Flutter Component Library Example',
+      initialRoute: AppRouter.currentRoute, // 使用保存的路由信息作为初始路由
       onGenerateRoute: AppRouter.generateRoute,
     );
   }

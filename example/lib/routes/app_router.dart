@@ -8,7 +8,12 @@ import '../pages/home/base_components/divider_page.dart';
 import 'error_page.dart';
 
 class AppRouter {
+  // 保存当前路由信息
+  static String currentRoute = '/';
+
   static Route<dynamic> generateRoute(RouteSettings settings) {
+    // 更新当前路由信息
+    currentRoute = settings.name!;
     switch (settings.name) {
       case '/':
         return MaterialPageRoute(builder: (context) => HomePage());
