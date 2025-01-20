@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 import '../pages/home/home_page.dart';
 import '../pages/account/account_page.dart';
-import '../pages/home/base_components/custom_button_page.dart';
-import '../pages/home/base_components/divider_page.dart';
+import '../pages/home/base_components/oe_button_page.dart';
+import '../pages/home/base_components/oe_divider_page.dart';
 // import '../pages/home/input_components/input_component_page.dart';
 // import '../pages/home/input_components/checkbox_page.dart';
+import '../pages/home/input_components/oe_input_page.dart';
 import 'error_page.dart';
 
 class AppRouter {
@@ -20,12 +21,13 @@ class AppRouter {
       case '/account':
         return MaterialPageRoute(builder: (context) => const AccountPage());
       // 基础组件路由
-      case '/custom_button':
-        return MaterialPageRoute(
-            builder: (context) => const CustomButtonPage());
-      case '/divider':
-        return MaterialPageRoute(builder: (context) => const DividerPage());
+      case '/oe_button':
+        return MaterialPageRoute(builder: (context) => const OeButtonPage());
+      case '/oe_divider':
+        return MaterialPageRoute(builder: (context) => const OeDividerPage());
       // 输入组件路由
+      case '/oe_input':
+        return MaterialPageRoute(builder: (context) => OeInputPage());
       // case '/input_components/input_component':
       //   return MaterialPageRoute(
       //       builder: (context) => const InputComponentPage());

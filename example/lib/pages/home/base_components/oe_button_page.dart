@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:my_component_library/my_component_library.dart';
 
-class CustomButtonPage extends StatelessWidget {
-  const CustomButtonPage({Key? key}) : super(key: key);
+class OeButtonPage extends StatelessWidget {
+  const OeButtonPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -15,7 +15,7 @@ class CustomButtonPage extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.start,
           children: [
             // 普通使用，使用默认颜色
-            CustomButton(
+            OeButton(
               onPressed: () {
                 print('Custom Button Pressed with default type');
               },
@@ -25,7 +25,7 @@ class CustomButtonPage extends StatelessWidget {
             ),
             const SizedBox(height: 20),
             // 指定颜色的按钮
-            CustomButton(
+            OeButton(
               onPressed: () {
                 print('Custom Button Pressed with red type');
               },
