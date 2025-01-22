@@ -11,7 +11,7 @@ class ExampleMap {
   };
 
   static final Map<String, Widget Function()> inputComponents = {
-    'oe_input': () => OeInputPage(),
+    'oe_input': () => OeInputViewPage(),
     // 'Checkbox': () => const CheckboxPage(),
   };
 }

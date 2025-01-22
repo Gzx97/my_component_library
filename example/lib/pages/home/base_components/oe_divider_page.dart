@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:my_component_library/my_component_library.dart';
 
 class OeDividerPage extends StatelessWidget {
   const OeDividerPage({Key? key}) : super(key: key);
@@ -12,9 +13,24 @@ class OeDividerPage extends StatelessWidget {
       body: Center(
         child: Column(
           children: const [
-            Text('Above the Divider'),
-            Divider(),
-            Text('Below the Divider'),
+            OeDivider(
+              text: '文字信息',
+              alignment: TextAlignment.left,
+            ),
+            SizedBox(
+              height: 20,
+            ),
+            OeDivider(
+              text: '文字信息',
+              alignment: TextAlignment.center,
+            ),
+            SizedBox(
+              height: 20,
+            ),
+            OeDivider(
+              text: '文字信息',
+              alignment: TextAlignment.right,
+            ),
           ],
         ),
       ),

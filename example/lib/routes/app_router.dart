@@ -27,7 +27,7 @@ class AppRouter {
         return MaterialPageRoute(builder: (context) => const OeDividerPage());
       // 输入组件路由
       case '/oe_input':
-        return MaterialPageRoute(builder: (context) => OeInputPage());
+        return MaterialPageRoute(builder: (context) => const OeInputViewPage());
       // case '/input_components/input_component':
       //   return MaterialPageRoute(
       //       builder: (context) => const InputComponentPage());
