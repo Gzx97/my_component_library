@@ -8,6 +8,7 @@ export 'components/input/input_view.dart';
 export 'components/input/oe_input.dart';
 export 'components/button/oe_button.dart';
 export 'components/button/oe_button_style.dart';
+export 'components/link/oe_link.dart';
 
 export 'theme/basic.dart';
 export 'theme/oe_theme.dart';
