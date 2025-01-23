@@ -14,24 +14,15 @@ class OeButtonPage extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           children: [
-            // 普通使用，使用默认颜色
             OeButton(
-              onPressed: () {
-                print('Custom Button Pressed with default type');
-              },
-              label: 'Default Color Button',
-              loading: true,
-              loadingText: 'loading...',
+              text: '填充按钮',
+              size: OeButtonSize.large,
+              type: OeButtonType.fill,
+              shape: OeButtonShape.round,
+              theme: OeButtonTheme.primary,
+              onTap: () => print('点击了填充按钮'),
             ),
             const SizedBox(height: 20),
-            // 指定颜色的按钮
-            OeButton(
-              onPressed: () {
-                print('Custom Button Pressed with red type');
-              },
-              label: 'Red Color Button',
-              type: "danger",
-            ),
           ],
         ),
       ),
