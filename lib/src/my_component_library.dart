@@ -28,3 +28,4 @@ export 'components/picker/oe_date_picker.dart';
 export 'components/picker/oe_multi_picker.dart';
 export 'components/picker/oe_picker.dart';
 export 'components/collapse/oe_collapse.dart';
+export 'components/backtop/oe_backtop.dart';
