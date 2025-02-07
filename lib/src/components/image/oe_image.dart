@@ -7,7 +7,7 @@ import 'dart:io';
 
 import 'image_widget.dart';
 
-enum TDImageType {
+enum OeImageType {
   /// 裁剪
   clip,
 
@@ -30,11 +30,11 @@ enum TDImageType {
   circle,
 }
 
-class TDImage extends StatefulWidget {
-  const TDImage({
+class OeImage extends StatefulWidget {
+  const OeImage({
     this.imgUrl,
     Key? key,
-    this.type = TDImageType.roundedSquare,
+    this.type = OeImageType.roundedSquare,
     this.errorWidget,
     this.loadingWidget,
     this.width,
@@ -71,7 +71,7 @@ class TDImage extends StatefulWidget {
   final File? imageFile;
 
   /// 图片类型
-  final TDImageType type;
+  final OeImageType type;
 
   /// 加载自定义提示
   final Widget? loadingWidget;
@@ -125,14 +125,14 @@ class TDImage extends StatefulWidget {
   final int? cacheWidth;
 
   @override
-  State<StatefulWidget> createState() => _TDImageState();
+  State<StatefulWidget> createState() => _OeImageState();
 }
 
-class _TDImageState extends State<TDImage> {
+class _OeImageState extends State<OeImage> {
   @override
   Widget build(BuildContext context) {
     switch (widget.type) {
-      case TDImageType.clip:
+      case OeImageType.clip:
         return widget.imageFile == null
             ? (widget.assetUrl == null
                 ? ImageWidget.network(
@@ -205,7 +205,7 @@ class _TDImageState extends State<TDImage> {
                 cacheWidth: widget.cacheWidth,
                 cacheHeight: widget.cacheHeight,
               );
-      case TDImageType.fitHeight:
+      case OeImageType.fitHeight:
         return widget.imageFile == null
             ? (widget.assetUrl == null
                 ? ImageWidget.network(
@@ -278,7 +278,7 @@ class _TDImageState extends State<TDImage> {
                 cacheWidth: widget.cacheWidth,
                 cacheHeight: widget.cacheHeight,
               );
-      case TDImageType.stretch:
+      case OeImageType.stretch:
         return widget.imageFile == null
             ? (widget.assetUrl == null
                 ? ConstrainedBox(
@@ -361,7 +361,7 @@ class _TDImageState extends State<TDImage> {
                 cacheWidth: widget.cacheWidth,
                 cacheHeight: widget.cacheHeight,
               );
-      case TDImageType.square:
+      case OeImageType.square:
         return widget.imageFile == null
             ? (widget.assetUrl == null
                 ? ImageWidget.network(
@@ -434,7 +434,7 @@ class _TDImageState extends State<TDImage> {
                 cacheWidth: widget.cacheWidth,
                 cacheHeight: widget.cacheHeight,
               );
-      case TDImageType.roundedSquare:
+      case OeImageType.roundedSquare:
         return Container(
             height: widget.height ?? 72,
             width: widget.width ?? 72,
@@ -514,7 +514,7 @@ class _TDImageState extends State<TDImage> {
                     cacheWidth: widget.cacheWidth,
                     cacheHeight: widget.cacheHeight,
                   ));
-      case TDImageType.circle:
+      case OeImageType.circle:
         return Container(
             height: widget.height ?? 72,
             width: widget.width ?? 72,
@@ -595,7 +595,7 @@ class _TDImageState extends State<TDImage> {
                     cacheHeight: widget.cacheHeight,
                     cacheWidth: widget.cacheWidth,
                   ));
-      case TDImageType.fitWidth:
+      case OeImageType.fitWidth:
         return widget.imageFile == null
             ? (widget.assetUrl == null
                 ? ImageWidget.network(
