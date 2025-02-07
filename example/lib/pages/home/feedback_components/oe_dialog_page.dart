@@ -1,36 +1,25 @@
 import 'package:flutter/material.dart';
 import 'package:my_component_library/my_component_library.dart';
 
-class OeInputViewPage extends StatefulWidget {
-  const OeInputViewPage({Key? key}) : super(key: key);
+class OeDialogViewPage extends StatefulWidget {
+  const OeDialogViewPage({Key? key}) : super(key: key);
 
   @override
-  _OeInputViewPageState createState() => _OeInputViewPageState();
+  _OeDialogViewPageState createState() => _OeDialogViewPageState();
 }
 
-class _OeInputViewPageState extends State<OeInputViewPage> {
+class _OeDialogViewPageState extends State<OeDialogViewPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('OeInput Example'),
+        title: Text('OeDialog Example'),
       ),
       body: Padding(
         padding: EdgeInsets.all(16.0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            OeInput(
-              leftLabel: '标签文字',
-              backgroundColor: Colors.white,
-              hintText: '请输入文字',
-              onChanged: (text) {},
-              onClearTap: () {},
-            ),
-            const SizedBox(
-              height: 16,
-            )
-          ],
+          children: [],
         ),
       ),
     );

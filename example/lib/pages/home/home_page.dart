@@ -75,6 +75,61 @@ class HomeComponentsPage extends StatelessWidget {
                   Navigator.pushNamed(context, '/${entry.key}');
                 },
               )),
+          const Padding(
+            padding: EdgeInsets.all(8.0),
+            child: Text(
+              '反馈组件分类',
+              style: TextStyle(
+                fontSize: 20,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+          ),
+          // 反馈组件展示
+          ...ExampleMap.feedbackComponents.entries
+              .map((entry) => ComponentButton(
+                    label: entry.key,
+                    onPressed: () {
+                      Navigator.pushNamed(context, '/${entry.key}');
+                    },
+                  )),
+
+          const Padding(
+            padding: EdgeInsets.all(8.0),
+            child: Text(
+              '导航组件分类',
+              style: TextStyle(
+                fontSize: 20,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+          ),
+          // 导航组件展示
+          ...ExampleMap.navComponents.entries.map((entry) => ComponentButton(
+                label: entry.key,
+                onPressed: () {
+                  Navigator.pushNamed(context, '/${entry.key}');
+                },
+              )),
+
+          const Padding(
+            padding: EdgeInsets.all(8.0),
+            child: Text(
+              '数据展示组件分类',
+              style: TextStyle(
+                fontSize: 20,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+          ),
+          // 数据展示组件展示
+          ...ExampleMap.dataDisplayComponents.entries
+              .map((entry) => ComponentButton(
+                    label: entry.key,
+                    onPressed: () {
+                      Navigator.pushNamed(context, '/${entry.key}');
+                    },
+                  )),
         ],
       ),
     );

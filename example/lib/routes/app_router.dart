@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import '../pages/home/data_display_components/oe_table_page.dart';
+import '../pages/home/feedback_components/oe_dialog_page.dart';
 import '../pages/home/home_page.dart';
 import '../pages/account/account_page.dart';
 import '../pages/home/base_components/oe_button_page.dart';
@@ -6,6 +8,7 @@ import '../pages/home/base_components/oe_divider_page.dart';
 // import '../pages/home/input_components/input_component_page.dart';
 // import '../pages/home/input_components/checkbox_page.dart';
 import '../pages/home/input_components/oe_input_page.dart';
+import '../pages/home/nav_components/oe_tabs_page.dart';
 import 'error_page.dart';
 
 class AppRouter {
@@ -28,11 +31,16 @@ class AppRouter {
       // 输入组件路由
       case '/oe_input':
         return MaterialPageRoute(builder: (context) => const OeInputViewPage());
-      // case '/input_components/input_component':
-      //   return MaterialPageRoute(
-      //       builder: (context) => const InputComponentPage());
-      // case '/input_components/checkbox':
-      //   return MaterialPageRoute(builder: (context) => const CheckboxPage());
+      // 反馈组件路由
+      case '/oe_dialog':
+        return MaterialPageRoute(
+            builder: (context) => const OeDialogViewPage());
+      //数据展示组件路由
+      case '/oe_table':
+        return MaterialPageRoute(builder: (context) => const OeTableViewPage());
+      //导航组件路由
+      case '/oe_tabs':
+        return MaterialPageRoute(builder: (context) => const OeTabsViewPage());
       default:
         return MaterialPageRoute(builder: (context) => const ErrorPage());
     }
