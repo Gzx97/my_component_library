@@ -68,3 +68,6 @@ export 'components/steps/oe_steps_horizontal.dart';
 export 'components/steps/oe_steps_horizontal_item.dart';
 export 'components/steps/oe_steps_vertical.dart';
 export 'components/steps/oe_steps_vertical_item.dart';
+export 'components/time_counter/oe_time_counter.dart';
+export 'components/time_counter/oe_time_counter_controller.dart';
+export 'components/time_counter/oe_time_counter_style.dart';
