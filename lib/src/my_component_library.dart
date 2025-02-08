@@ -36,3 +36,8 @@ export 'components/table/oe_table.dart';
 export 'components/checkbox/td_check_box_group.dart';
 export 'components/checkbox/oe_check_box.dart';
 export 'components/toast/oe_toast.dart';
+export 'components/badge/oe_badge.dart';
+export 'components/sidebar/oe_sidebar.dart';
+export 'components/sidebar/oe_sidebar_controller.dart';
+export 'components/sidebar/oe_sidebar_item.dart';
+export 'components/sidebar/oe_wrap_sidebar_item.dart';
