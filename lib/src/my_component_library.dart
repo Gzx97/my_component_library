@@ -87,3 +87,6 @@ export 'components/calendar/oe_calendar_body.dart';
 export 'components/calendar/oe_calendar_cell.dart';
 export 'components/calendar/oe_calendar_header.dart';
 export 'components/calendar/oe_calendar_style.dart';
+export 'components/tag/oe_select_tag.dart';
+export 'components/tag/oe_tag.dart';
+export 'components/tag/oe_tag_styles.dart';
