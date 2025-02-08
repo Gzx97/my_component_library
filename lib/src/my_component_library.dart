@@ -42,3 +42,4 @@ export 'components/sidebar/oe_sidebar_controller.dart';
 export 'components/sidebar/oe_sidebar_item.dart';
 export 'components/sidebar/oe_wrap_sidebar_item.dart';
 export 'components/avatar/oe_avatar.dart';
+export 'components/fab/oe_fab.dart';
