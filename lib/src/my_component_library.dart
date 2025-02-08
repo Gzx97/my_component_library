@@ -91,3 +91,4 @@ export 'components/tag/oe_select_tag.dart';
 export 'components/tag/oe_tag.dart';
 export 'components/tag/oe_tag_styles.dart';
 export 'components/swiper/oe_swiper.dart';
+export 'components/result/oe_result.dart';
