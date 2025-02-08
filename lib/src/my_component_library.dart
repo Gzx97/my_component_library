@@ -32,3 +32,4 @@ export 'components/backtop/oe_backtop.dart';
 export 'components/empty/oe_empty.dart';
 export 'components/loading/oe_circle_indicator.dart';
 export 'components/loading/oe_loading.dart';
+export 'components/table/oe_table.dart';
