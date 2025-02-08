@@ -99,3 +99,8 @@ export 'components/dialog/oe_dialog.dart';
 export 'components/dialog/oe_dialog_widget.dart';
 export 'components/dialog/oe_image_dialog.dart';
 export 'components/dialog/oe_input_dialog.dart';
+export 'components/dropdown_menu/oe_dropdown_inherited.dart';
+export 'components/dropdown_menu/oe_dropdown_item.dart';
+export 'components/dropdown_menu/oe_dropdown_menu.dart';
+export 'components/dropdown_menu/oe_dropdown_panel.dart';
+export 'components/dropdown_menu/oe_dropdown_popup.dart';
