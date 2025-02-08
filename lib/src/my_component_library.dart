@@ -90,3 +90,4 @@ export 'components/calendar/oe_calendar_style.dart';
 export 'components/tag/oe_select_tag.dart';
 export 'components/tag/oe_tag.dart';
 export 'components/tag/oe_tag_styles.dart';
+export 'components/swiper/oe_swiper.dart';
