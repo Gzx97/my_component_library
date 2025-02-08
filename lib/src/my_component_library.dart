@@ -55,3 +55,8 @@ export 'components/cell/oe_cell.dart';
 export 'components/cell/oe_cell_group.dart';
 export 'components/cell/oe_cell_inherited.dart';
 export 'components/cell/oe_cell_style.dart';
+
+export 'components/popup/oe_popup_route.dart';
+export 'components/popup/oe_popup_panel.dart';
+
+export 'components/drawer/oe_drawer.dart';
