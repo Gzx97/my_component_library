@@ -72,3 +72,4 @@ export 'components/time_counter/oe_time_counter.dart';
 export 'components/time_counter/oe_time_counter_controller.dart';
 export 'components/time_counter/oe_time_counter_style.dart';
 export 'components/textarea/oe_textarea.dart';
+export 'components/switch/oe_switch.dart';
