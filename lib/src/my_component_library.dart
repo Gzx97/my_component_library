@@ -104,3 +104,5 @@ export 'components/dropdown_menu/oe_dropdown_item.dart';
 export 'components/dropdown_menu/oe_dropdown_menu.dart';
 export 'components/dropdown_menu/oe_dropdown_panel.dart';
 export 'components/dropdown_menu/oe_dropdown_popup.dart';
+export 'components/notice_bar/oe_notice_bar.dart';
+export 'components/notice_bar/oe_notice_bar_style.dart';
