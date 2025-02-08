@@ -60,3 +60,4 @@ export 'components/popup/oe_popup_route.dart';
 export 'components/popup/oe_popup_panel.dart';
 
 export 'components/drawer/oe_drawer.dart';
+export 'components/navbar/oe_nav_bar.dart';
