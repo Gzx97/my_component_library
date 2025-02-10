@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'pages/home/base_components/oe_button_page.dart';
 import 'pages/home/base_components/oe_divider_page.dart';
+import 'pages/home/base_components/oe_fab_page.dart';
+import 'pages/home/base_components/oe_icon_page.dart';
 import 'pages/home/data_display_components/oe_table_page.dart';
 import 'pages/home/feedback_components/oe_dialog_page.dart';
 import 'pages/home/input_components/oe_input_page.dart';
@@ -11,6 +13,8 @@ class ExampleMap {
   static final Map<String, Widget Function()> baseComponents = {
     'oe_button': () => const OeButtonPage(),
     'oe_divider': () => const OeDividerPage(),
+    'oe_fab': () => const OeFabPage(),
+    'oe_icon': () => const OeIconPage(),
   };
   // 输入组件
   static final Map<String, Widget Function()> inputComponents = {

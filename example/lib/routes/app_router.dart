@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import '../pages/home/base_components/oe_fab_page.dart';
+import '../pages/home/base_components/oe_icon_page.dart';
 import '../pages/home/data_display_components/oe_table_page.dart';
 import '../pages/home/feedback_components/oe_dialog_page.dart';
 import '../pages/home/home_page.dart';
@@ -28,6 +30,10 @@ class AppRouter {
         return MaterialPageRoute(builder: (context) => const OeButtonPage());
       case '/oe_divider':
         return MaterialPageRoute(builder: (context) => const OeDividerPage());
+      case '/oe_fab':
+        return MaterialPageRoute(builder: (context) => const OeFabPage());
+      case '/oe_icon':
+        return MaterialPageRoute(builder: (context) => const OeIconPage());
       // 输入组件路由
       case '/oe_input':
         return MaterialPageRoute(builder: (context) => const OeInputViewPage());
